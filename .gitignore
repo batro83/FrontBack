@@ -34,3 +34,5 @@
 **/mockServer
 **/ENV.properties
 **/.metadata
+.recommenders/
+Servers/
