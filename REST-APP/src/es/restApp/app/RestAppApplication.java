@@ -1,18 +1,18 @@
-package es.back.testApp.app;
+package es.restApp.app;
 
 import java.util.HashSet;
 import java.util.Set;
 
 import javax.ws.rs.core.Application;
 
-import es.back.testApp.rest.Rest;
+import es.restApp.rest.RestTest;
 
-public class RestApplication extends Application{
-	
+public class RestAppApplication extends Application {
+
 	private Set<Object> singletons = new HashSet<Object>();
 
-	public RestApplication() {
-		singletons.add(new Rest());
+	public RestAppApplication() {
+		singletons.add(new RestTest());
 	}
 
 	@Override
