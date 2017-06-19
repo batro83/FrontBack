@@ -14,7 +14,7 @@ import javax.ws.rs.core.MediaType;
 public class RestTest {
 	
 	@GET
-	@Path("/{id}/get")
+	@Path("/get/{id}")
 	public void getEmployee(@PathParam("id") int id) {
 		System.out.println("eeeee "+ id);
 	}
