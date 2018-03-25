@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
-  <display-name>REST-APP</display-name>
-  
-  <!-- this need same with resteasy servlet url-pattern -->
+  <display-name>webApp1</display-name>
   <context-param>
-	<param-name>resteasy.servlet.mapping.prefix</param-name>
-	<param-value>/rest</param-value>
+    <param-name>resteasy.servlet.mapping.prefix</param-name>
+    <param-value>/rest</param-value>
   </context-param>
-  
   <servlet>
     <servlet-name>resteasy-servlet</servlet-name>
     <servlet-class>
@@ -15,17 +12,13 @@
     </servlet-class>
     <init-param>
       <param-name>javax.ws.rs.Application</param-name>
-      <param-value>es.restApp.app.RestAppApplication</param-value>
+      <param-value>es.webApp1.app.RestAppApplication</param-value>
     </init-param>
   </servlet>
-  
   <servlet-mapping>
     <servlet-name>resteasy-servlet</servlet-name>
     <url-pattern>/rest/*</url-pattern>
   </servlet-mapping>
-  
-  
-  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
